@@ -1,0 +1,106 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding-top: 56px;
+    margin: 0;
+}
+
+/* Loading spinner */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand.eye-catching {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand.eye-catching:hover {
+    transform: scale(1.1);
+}
+
+/* Header styling */
+header {
+    padding-top: 100px;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    text-align: center;
+}
+
+header img, header h1, header p {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+header img { animation-delay: 0.2s; }
+header h1 { animation-delay: 0.4s; }
+header p { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Headings */
+h1, h2 {
+    color: #007bff;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Back-to-top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* Section dividers */
+section {
+    border-top: 2px solid #007bff;
+    border-bottom: 2px solid #007bff;
+    padding: 20px 0; /* Adjusted padding for better spacing */
+    margin: 40px 0; /* Increased margin to avoid overlap with navbar/footer */
+}
